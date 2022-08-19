@@ -1,4 +1,4 @@
-import "./styles.css";
+import "./assets/styles.css";
 
 export default function App() {
 	return (
