@@ -13,8 +13,8 @@ const AUTH_ENDPOINT = "https://accounts.spotify.com/authorize";
 const USER_SERVICE_URL = "https://api.spotify.com/v1/browse/new-releases";
 
 export default function Spotify() {
-	const [token, setToken] = useState("");
-
+	const [token, setToken] = useState(null);
+	const [tokenexp, setTokenexp] = useState(null);
 	const [data, setData] = useState({ users: [], isFetching: false });
 
 	useEffect(() => {
@@ -74,8 +74,8 @@ export default function Spotify() {
 					Login to Spotify
 				</a>
 			) : (
-				// <button onClick={logout}>Logout</button>
-				console.log(data)
+				<button onClick={logout}>Logout</button>
+				// console.log(data)
 				// data.users.albums.items.map((artist) => (
 				// 	<div key={artist.id}>
 				// 		{artist.images.length ? (
