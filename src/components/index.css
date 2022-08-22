@@ -1,0 +1,13 @@
+.container {
+    display: -webkit-flex;
+    /* -webkit-flex-wrap: wrap; */
+    display: flex;
+    flex: 1;
+}
+
+.spotify,
+img {
+    width: 150px;
+    height: auto;
+    margin: 10px;
+}

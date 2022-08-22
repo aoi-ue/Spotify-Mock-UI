@@ -1,5 +1,3 @@
-// import "./assets/styles.css";
-
 import Layout from "./layouts/Layout";
 import Spotify from "./components/Spotify";
 

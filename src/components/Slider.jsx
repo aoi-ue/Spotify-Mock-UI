@@ -2,8 +2,7 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 const USER_SERVICE_URL = "https://jsonplaceholder.typicode.com/users";
 
-export default function SelectedSlider() {
-	const [data, setData] = useState({ users: [], isFetching: false });
+export default function SelectedSlider(props) {
 
 	useEffect(() => {
 		const fetchUsers = async () => {
